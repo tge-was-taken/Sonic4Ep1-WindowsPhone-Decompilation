@@ -1,1 +1,19 @@
 D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\obj\Debug\Sonic4 ep I.csprojAssemblyReference.cache
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Sonic4 ep I.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Sonic4 ep I.pdb
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Microsoft.Xna.Framework.Avatar.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Microsoft.Xna.Framework.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Microsoft.Xna.Framework.Game.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Microsoft.Xna.Framework.GamerServices.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Microsoft.Xna.Framework.Graphics.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Microsoft.Xna.Framework.Net.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Microsoft.Xna.Framework.Storage.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Microsoft.Xna.Framework.Video.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Microsoft.Xna.Framework.Xact.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Stubs.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\bin\Debug\Stubs.pdb
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\obj\Debug\Sonic4 ep I.csproj.CopyComplete
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\obj\Debug\Sonic4 ep I.dll
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\obj\Debug\Sonic4 ep I.pdb
+D:\Users\smart\Desktop\Sonic4 ep I dnSpy\Sonic4 ep I\obj\Debug\Sonic4 ep I.g.resources

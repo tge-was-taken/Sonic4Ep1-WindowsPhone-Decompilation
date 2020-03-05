@@ -115,7 +115,7 @@ namespace mpp
 			}
 			long num = OpenGL.CalcBlendStateId(OpenGL.m_blendState.ColorSourceBlend, OpenGL.m_blendState.AlphaSourceBlend, OpenGL.m_blendState.ColorDestinationBlend, OpenGL.m_blendState.AlphaDestinationBlend, OpenGL.m_blendState.ColorWriteChannels, blendFunction, blendFunction2);
 			BlendState blendState;
-			if (!OpenGL.m_blendStates.TryGetValue(num, ref blendState))
+			if (!OpenGL.m_blendStates.TryGetValue(num, out blendState ))
 			{
 				blendState = OpenGL.m_blendState.clone();
 				blendState.ColorBlendFunction = blendFunction;
@@ -162,7 +162,7 @@ namespace mpp
 			}
 			long num = OpenGL.CalcBlendStateId(blend, blend2, blend3, blend4, OpenGL.m_blendState.ColorWriteChannels, OpenGL.m_blendState.ColorBlendFunction, OpenGL.m_blendState.AlphaBlendFunction);
 			BlendState blendState;
-			if (!OpenGL.m_blendStates.TryGetValue(num, ref blendState))
+			if (!OpenGL.m_blendStates.TryGetValue(num, out blendState ))
 			{
 				blendState = OpenGL.m_blendState.clone();
 				blendState.ColorSourceBlend = blend;
@@ -338,7 +338,7 @@ namespace mpp
 			}
 			long num = OpenGL.CalcBlendStateId(OpenGL.m_blendState.ColorSourceBlend, OpenGL.m_blendState.AlphaSourceBlend, OpenGL.m_blendState.ColorDestinationBlend, OpenGL.m_blendState.AlphaDestinationBlend, colorWriteChannels, OpenGL.m_blendState.ColorBlendFunction, OpenGL.m_blendState.AlphaBlendFunction);
 			BlendState blendState;
-			if (!OpenGL.m_blendStates.TryGetValue(num, ref blendState))
+			if (!OpenGL.m_blendStates.TryGetValue(num, out blendState ))
 			{
 				blendState = OpenGL.m_blendState.clone();
 				blendState.ColorWriteChannels = colorWriteChannels;
@@ -390,7 +390,7 @@ namespace mpp
 			{
 				uint num = buffers[i];
 				OpenGL.BufferItem bufferItem;
-				if (!OpenGL.m_buffers.TryGetValue(num, ref bufferItem))
+				if (!OpenGL.m_buffers.TryGetValue(num, out bufferItem ))
 				{
 					throw new ArgumentException();
 				}
@@ -422,7 +422,7 @@ namespace mpp
 			{
 				uint num = textures[i];
 				Texture2D texture2D;
-				if (!OpenGL.m_textures.TryGetValue(num, ref texture2D))
+				if (!OpenGL.m_textures.TryGetValue(num, out texture2D ))
 				{
 					throw new ArgumentException();
 				}
@@ -474,7 +474,7 @@ namespace mpp
 			}
 			int num = OpenGL.CalcDepthStencilStateId(depthBufferFunction, OpenGL.m_depthStencilState.DepthBufferWriteEnable);
 			DepthStencilState depthStencilState;
-			if (!OpenGL.m_depthStencils.TryGetValue(num, ref depthStencilState))
+			if (!OpenGL.m_depthStencils.TryGetValue(num, out depthStencilState ))
 			{
 				depthStencilState = OpenGL.m_depthStencilState.clone();
 				depthStencilState.DepthBufferFunction = depthBufferFunction;
@@ -498,7 +498,7 @@ namespace mpp
 			}
 			int num = OpenGL.CalcDepthStencilStateId(OpenGL.m_depthStencilState.DepthBufferFunction, flag);
 			DepthStencilState depthStencilState;
-			if (!OpenGL.m_depthStencils.TryGetValue(num, ref depthStencilState))
+			if (!OpenGL.m_depthStencils.TryGetValue(num, out depthStencilState))
 			{
 				depthStencilState = OpenGL.m_depthStencilState.clone();
 				depthStencilState.DepthBufferWriteEnable = flag;
@@ -2212,7 +2212,7 @@ namespace mpp
 			IL_D5:
 			int num = OpenGL.CalcSamplerStateId(textureAddressMode, textureAddressMode2);
 			SamplerState samplerState;
-			if (!OpenGL.m_samplerStates.TryGetValue(num, ref samplerState))
+			if (!OpenGL.m_samplerStates.TryGetValue(num, out samplerState))
 			{
 				samplerState = OpenGL.m_textureUnits[(int)((UIntPtr)OpenGL.m_activeTextureUnit)].SamplerState.clone();
 				samplerState.AddressU = textureAddressMode;
@@ -2323,19 +2323,19 @@ namespace mpp
 		// Token: 0x060022B7 RID: 8887 RVA: 0x001468A5 File Offset: 0x00144AA5
 		private static int CalcDepthStencilStateId(CompareFunction depthBufferFunction, bool depthBufferWriteEnable)
 		{
-			return (int)((depthBufferFunction + 1) * (CompareFunction)10 + (depthBufferWriteEnable ? 1 : 0));
+			return (int)(((int)depthBufferFunction + 1) * 10 + (depthBufferWriteEnable ? 1 : 0));
 		}
 
 		// Token: 0x060022B8 RID: 8888 RVA: 0x001468B5 File Offset: 0x00144AB5
 		private static int CalcSamplerStateId(TextureAddressMode AddrU, TextureAddressMode AddrV)
 		{
-			return (int)((AddrU + 1) * (TextureAddressMode)10 + (int)AddrV);
+			return (int)(((int)AddrU + 1) * 10 + (int)AddrV);
 		}
 
 		// Token: 0x060022B9 RID: 8889 RVA: 0x001468C0 File Offset: 0x00144AC0
 		private static long CalcBlendStateId(Blend colorSrcBlend, Blend alphaSrcBlend, Blend colorDstBlend, Blend alphaDstBlend, ColorWriteChannels channels, BlendFunction ColorFunc, BlendFunction AlphaFunc)
 		{
-			return (long)((colorSrcBlend + 1) * (Blend)32 * (Blend)32 * (Blend)32 * (Blend)32 * (Blend)32 + (int)((alphaSrcBlend + 1) * (Blend)32 * (Blend)32 * (Blend)32 * (Blend)32) + (int)((colorDstBlend + 1) * (Blend)32 * (Blend)32 * (Blend)32) + (int)((alphaDstBlend + 1) * (Blend)32 * (Blend)32) + (int)((channels + 1) * (ColorWriteChannels)32) + (int)((ColorFunc + 1) * (BlendFunction)5) + (int)AlphaFunc);
+			return (long)(((int)colorSrcBlend + 1) * 32 * 32 * 32 * 32 * 32 + (int)(((int)alphaSrcBlend + 1) * 32 * 32 * 32 * 32) + (int)(((int)colorDstBlend + 1) * 32 * 32 * 32) + (int)(((int)alphaDstBlend + 1) * 32 * 32) + (int)(((int)channels + 1) * 32) + (int)(((int)ColorFunc + 1) * 5) + (int)AlphaFunc);
 		}
 
 		// Token: 0x060022BA RID: 8890 RVA: 0x0014691C File Offset: 0x00144B1C

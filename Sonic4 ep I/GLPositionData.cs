@@ -6,10 +6,10 @@ public class GLPositionData : GLVector3Data, OpenGL.GLVertexData
 {
 	// Token: 0x060028AC RID: 10412 RVA: 0x001544CC File Offset: 0x001526CC
 	public GLPositionData(ByteBuffer buffer, int size, uint type, int stride, int elCount)
+		: base( buffer, size, type, stride, elCount )
 	{
 		OpenGL.GLVertexElementType[] array = new OpenGL.GLVertexElementType[1];
 		this.compType_ = array;
-		base..ctor(buffer, size, type, stride, elCount);
 	}
 
 	// Token: 0x1700013A RID: 314

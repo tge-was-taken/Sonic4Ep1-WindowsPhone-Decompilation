@@ -732,13 +732,13 @@ public class LiveFeature : XBOXLive
 				while (i < text.Length)
 				{
 					LiveFeature.num_dst_rect.X = 240 - 10 * num2;
-					if (text.get_Chars(i) == '0')
+					if (text[i] == '0')
 					{
 						LiveFeature.num_src_rect.X = 144;
 					}
 					else
 					{
-						LiveFeature.num_src_rect.X = (int)('\u0010' * (text.get_Chars(i) - '1'));
+						LiveFeature.num_src_rect.X = (int)('\u0010' * (text[i] - '1'));
 					}
 					spriteBatch.Draw(LiveFeature.nums, LiveFeature.num_dst_rect, new Rectangle?(LiveFeature.num_src_rect), Color.White);
 					i++;

@@ -9,7 +9,7 @@ public class FloatBuffer : ByteBuffer
 	}
 
 	// Token: 0x170001C2 RID: 450
-	public float this[int index]
+	public new float this[int index]
 	{
 		get
 		{

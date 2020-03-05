@@ -9,7 +9,7 @@ public class IntBuffer : ByteBuffer
 	}
 
 	// Token: 0x170001BE RID: 446
-	public int this[int index]
+	public new int this[int index]
 	{
 		get
 		{

@@ -9,7 +9,7 @@ public class UIntBuffer : ByteBuffer
 	}
 
 	// Token: 0x170001BF RID: 447
-	public uint this[int index]
+	public new uint this[int index]
 	{
 		get
 		{

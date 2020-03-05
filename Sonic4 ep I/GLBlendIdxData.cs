@@ -14,9 +14,9 @@ public class GLBlendIdxData : OpenGL.GLVertexData
 		for (int i = 0; i < elCount; i++)
 		{
 			byte b = buffer[num];
-			byte b2 = (size > 1) ? buffer[num + 1] : 0;
-			byte b3 = (size > 2) ? buffer[num + 2] : 0;
-			byte b4 = (size > 3) ? buffer[num + 3] : 0;
+			byte b2 = (byte)((size > 1) ? buffer[num + 1] : 0);
+			byte b3 = (byte)((size > 2) ? buffer[num + 2] : 0);
+			byte b4 = (byte)((size > 3) ? buffer[num + 3] : 0);
 			this.data_[i] = new Byte4((float)b, (float)b2, (float)b3, (float)b4);
 			num += stride;
 		}

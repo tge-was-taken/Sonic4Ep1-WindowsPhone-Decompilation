@@ -9,7 +9,7 @@ public class ShortBuffer : ByteBuffer
 	}
 
 	// Token: 0x170001C0 RID: 448
-	public short this[int index]
+	public new short this[int index]
 	{
 		get
 		{

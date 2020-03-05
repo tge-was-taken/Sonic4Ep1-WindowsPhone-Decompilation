@@ -21,7 +21,7 @@ namespace Sonic4ep1
 
 		// Token: 0x17000178 RID: 376
 		// (get) Token: 0x06002994 RID: 10644 RVA: 0x001586DC File Offset: 0x001568DC
-		[EditorBrowsable(2)]
+		[EditorBrowsable(EditorBrowsableState.Advanced)]
 		public static ResourceManager ResourceManager
 		{
 			get
@@ -38,7 +38,7 @@ namespace Sonic4ep1
 		// Token: 0x17000179 RID: 377
 		// (get) Token: 0x06002995 RID: 10645 RVA: 0x0015871B File Offset: 0x0015691B
 		// (set) Token: 0x06002996 RID: 10646 RVA: 0x00158722 File Offset: 0x00156922
-		[EditorBrowsable(2)]
+		[EditorBrowsable( EditorBrowsableState.Advanced )]
 		public static CultureInfo Culture
 		{
 			get

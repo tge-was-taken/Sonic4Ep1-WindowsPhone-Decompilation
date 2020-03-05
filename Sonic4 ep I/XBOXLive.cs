@@ -98,7 +98,7 @@ public abstract class XBOXLive
 				{
 					new MarketplaceDetailTask
 					{
-						ContentType = 1
+						ContentType = (MarketplaceContentType)1
 					}.Show();
 				}
 			}

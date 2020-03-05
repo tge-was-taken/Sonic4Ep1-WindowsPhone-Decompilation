@@ -104,7 +104,7 @@ public class SaveState
 		{
 			if (AppMain.store.FileExists("laststate.dat"))
 			{
-				using (IsolatedStorageFileStream isolatedStorageFileStream = new IsolatedStorageFileStream("laststate.dat", 3, 1, AppMain.store))
+				using (IsolatedStorageFileStream isolatedStorageFileStream = new IsolatedStorageFileStream("laststate.dat", FileMode.Open, FileAccess.Read, AppMain.store))
 				{
 					SaveState.save.UnSerialize(isolatedStorageFileStream);
 				}

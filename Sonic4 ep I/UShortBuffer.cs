@@ -9,7 +9,7 @@ public class UShortBuffer : ByteBuffer
 	}
 
 	// Token: 0x170001C1 RID: 449
-	public ushort this[int index]
+	public new ushort this[int index]
 	{
 		get
 		{
