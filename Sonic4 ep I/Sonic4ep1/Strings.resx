@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ID_STAGE3" xml:space="preserve">
+    <value>LOST LABYRINTH ZONE {0}</value>
+  </data>
+  <data name="ID_STAGE2" xml:space="preserve">
+    <value>CASINO STREET ZONE {0}</value>
+  </data>
+  <data name="ID_STAGE1" xml:space="preserve">
+    <value>SPLASH HILL ZONE {0}</value>
+  </data>
+  <data name="ID_STAGE4" xml:space="preserve">
+    <value>MAD GEAR ZONE {0}</value>
+  </data>
+  <data name="ID_SSTAGE" xml:space="preserve">
+    <value>SPECIAL STAGE {0}</value>
+  </data>
+  <data name="ID_LOADING" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="ID_LB_DATE" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ID_LB_GTAG" xml:space="preserve">
+    <value>Gamertag</value>
+  </data>
+  <data name="ID_LB_RANK" xml:space="preserve">
+    <value>Rank</value>
+  </data>
+  <data name="ID_YES" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ID_ACT" xml:space="preserve">
+    <value>ACT {0}</value>
+  </data>
+  <data name="ID_LB_BUY" xml:space="preserve">
+    <value>Please purchase the game in order to view the leaderboards</value>
+  </data>
+  <data name="ID_RESUME_TEXT" xml:space="preserve">
+    <value>Do you want to resume from your most recent Star Post?</value>
+  </data>
+  <data name="ID_UPDATE_CAPTION" xml:space="preserve">
+    <value>Title Update Available</value>
+  </data>
+  <data name="ID_BOSS" xml:space="preserve">
+    <value>BOSS</value>
+  </data>
+  <data name="ID_LEADERBOARDS" xml:space="preserve">
+    <value>Leaderboards</value>
+  </data>
+  <data name="ID_BESTSCORE" xml:space="preserve">
+    <value>Best Score</value>
+  </data>
+  <data name="ID_A6_NAME" xml:space="preserve">
+    <value>Contender</value>
+  </data>
+  <data name="ID_A6_DESC" xml:space="preserve">
+    <value>Upload your recorded clear times for all Time Attack stages.</value>
+  </data>
+  <data name="ID_A5_NAME" xml:space="preserve">
+    <value>All Stages Cleared!</value>
+  </data>
+  <data name="ID_A5_DESC" xml:space="preserve">
+    <value>Defeat the final boss and view the ending.</value>
+  </data>
+  <data name="ID_A2_NAME" xml:space="preserve">
+    <value>The First Chaos Emerald</value>
+  </data>
+  <data name="ID_A2_DESC" xml:space="preserve">
+    <value>Acquire a Chaos Emerald.</value>
+  </data>
+  <data name="ID_A7_NAME" xml:space="preserve">
+    <value>Ring Collector</value>
+  </data>
+  <data name="ID_A7_DESC" xml:space="preserve">
+    <value>Collect all the Rings in 'Special Stage 1' and Clear the stage.</value>
+  </data>
+  <data name="ID_A4_NAME" xml:space="preserve">
+    <value>Golden Flash</value>
+  </data>
+  <data name="ID_A4_DESC" xml:space="preserve">
+    <value>Clear all Acts as Super Sonic.</value>
+  </data>
+  <data name="ID_A1_NAME" xml:space="preserve">
+    <value>The Story Begins</value>
+  </data>
+  <data name="ID_A1_DESC" xml:space="preserve">
+    <value>Clear Splash Hill Zone Act 1.</value>
+  </data>
+  <data name="ID_MUSIC_INTERRUPT_CAPTON" xml:space="preserve">
+    <value>Interrupt Music</value>
+  </data>
+  <data name="ID_MUSIC_INTERRUPT_TEXT" xml:space="preserve">
+    <value>Do you want to interrupt your music and use game backround music?</value>
+  </data>
+  <data name="ID_SUPERSONIC" xml:space="preserve">
+    <value>Super Sonic</value>
+  </data>
+  <data name="ID_A3_NAME" xml:space="preserve">
+    <value>Enemy Hunter</value>
+  </data>
+  <data name="ID_A3_DESC" xml:space="preserve">
+    <value>Defeat 1,000 enemies.</value>
+  </data>
+  <data name="ID_BESTTIME" xml:space="preserve">
+    <value>Best Time</value>
+  </data>
+  <data name="ID_A9_DESC" xml:space="preserve">
+    <value>Acquire all seven Chaos Emeralds.</value>
+  </data>
+  <data name="ID_A9_NAME" xml:space="preserve">
+    <value>Super Sonic Genesis</value>
+  </data>
+  <data name="ID_A8_DESC" xml:space="preserve">
+    <value>Build up 99 or more extra lives.</value>
+  </data>
+  <data name="ID_A8_NAME" xml:space="preserve">
+    <value>Immortal</value>
+  </data>
+  <data name="ID_FINALZONE" xml:space="preserve">
+    <value>E.G.G. STATION ZONE BOSS</value>
+  </data>
+  <data name="ID_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ID_NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ID_LB_UPDATE" xml:space="preserve">
+    <value>Please update the game to view the Leaderboard</value>
+  </data>
+  <data name="ID_LB_UNABLE" xml:space="preserve">
+    <value>You must be signed in to Xbox LIVE to access this feature.</value>
+  </data>
+  <data name="ID_RESUME_CAPTION" xml:space="preserve">
+    <value>Resume game?</value>
+  </data>
+  <data name="ID_SONIC" xml:space="preserve">
+    <value>Sonic</value>
+  </data>
+  <data name="ID_ACHIEVEMENTS" xml:space="preserve">
+    <value>Achievements</value>
+  </data>
+  <data name="ID_A14_NAME" xml:space="preserve">
+    <value>Casino Street Zone</value>
+  </data>
+  <data name="ID_A14_DESC" xml:space="preserve">
+    <value>Finish all 3 Acts and boss round of Casino Street Zone</value>
+  </data>
+  <data name="ID_LB_OFFLINE" xml:space="preserve">
+    <value>Please sign in to view the Leaderboard</value>
+  </data>
+  <data name="ID_A13_NAME" xml:space="preserve">
+    <value>Splash Hill Zone</value>
+  </data>
+  <data name="ID_A13_DESC" xml:space="preserve">
+    <value>Finish all 3 Acts and boss round of Splash Hill Zone</value>
+  </data>
+  <data name="ID_A16_NAME" xml:space="preserve">
+    <value>Mad Gear Zone</value>
+  </data>
+  <data name="ID_A16_DESC" xml:space="preserve">
+    <value>Finish all 3 Acts and boss round of Mad Gear Zone</value>
+  </data>
+  <data name="ID_A15_NAME" xml:space="preserve">
+    <value>Lost Labyrinth Zone</value>
+  </data>
+  <data name="ID_A15_DESC" xml:space="preserve">
+    <value>Finish all 3 Acts and boss round of Lost Labrinth Zone</value>
+  </data>
+  <data name="ID_A10_NAME" xml:space="preserve">
+    <value>Speed's My Game</value>
+  </data>
+  <data name="ID_A10_DESC" xml:space="preserve">
+    <value>Clear Splash Hill Zone Act 1 in less than a minute.</value>
+  </data>
+  <data name="ID_A12_NAME" xml:space="preserve">
+    <value>Centurion</value>
+  </data>
+  <data name="ID_A12_DESC" xml:space="preserve">
+    <value>Get 120 rings in Mad Gear Zone Act 1.</value>
+  </data>
+  <data name="ID_A11_NAME" xml:space="preserve">
+    <value>Untouchable</value>
+  </data>
+  <data name="ID_A11_DESC" xml:space="preserve">
+    <value>Clear the E.G.G. Station Zone without taking any damage.</value>
+  </data>
+  <data name="ID_LB_NORECORDS" xml:space="preserve">
+    <value>No Records</value>
+  </data>
+  <data name="ID_UPDATE_TEXT" xml:space="preserve">
+    <value>An update is available! This update is required to connect to Xbox LIVE. Update now?</value>
+  </data>
+</root>

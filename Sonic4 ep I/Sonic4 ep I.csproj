@@ -139,13 +139,20 @@
   <ItemGroup>
     <EmbeddedResource Include="Microsoft.Xna.Framework.RuntimeProfile" />
     <EmbeddedResource Include="Microsoft.Xna.Framework.XlastConfiguration" />
-    <EmbeddedResource Include="Sonic4ep1\Strings.resources" />
+    <EmbeddedResource Include="Sonic4ep1\Strings.resx">
+      <DependentUpon>Strings.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Stubs\Stubs.csproj">
       <Project>{d77dc810-6909-4a57-aba8-c2bcaa0a847c}</Project>
       <Name>Stubs</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.Loader">
+      <Version>4.3.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

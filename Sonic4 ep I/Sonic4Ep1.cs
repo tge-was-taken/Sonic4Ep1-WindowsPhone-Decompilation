@@ -20,7 +20,7 @@ public class Sonic4Ep1 : Game
 		this.graphics.SupportedOrientations = DisplayOrientation.LandscapeLeft;
 		this.graphics.PreparingDeviceSettings += new EventHandler<PreparingDeviceSettingsEventArgs>(this.graphics_PreparingDeviceSettings);
 		this.graphics.SynchronizeWithVerticalRetrace = true;
-		this.graphics.IsFullScreen = true;
+		this.graphics.IsFullScreen = false;
 		base.IsMouseVisible = true;
 		base.Content.RootDirectory = "Content";
 		base.TargetElapsedTime = TimeSpan.FromTicks(333333L);
@@ -86,24 +86,24 @@ public class Sonic4Ep1 : Game
 		{
 			SaveState._saveFile(SaveState.save);
 		}
-		if (!Guide.IsVisible)
-		{
-			this.storeSystemVolume = true;
-			try
-			{
-				if (!AppMain.g_ao_sys_global.is_playing_device_bgm_music)
-				{
-					MediaPlayer.Pause();
-				}
-				MediaPlayer.Volume = this.deviceMusicVolume;
-				return;
-			}
-			catch (Exception)
-			{
-				return;
-			}
-		}
-		this.storeSystemVolume = false;
+		//if (!Guide.IsVisible)
+		//{
+		//	this.storeSystemVolume = true;
+		//	try
+		//	{
+		//		if (!AppMain.g_ao_sys_global.is_playing_device_bgm_music)
+		//		{
+		//			MediaPlayer.Pause();
+		//		}
+		//		MediaPlayer.Volume = this.deviceMusicVolume;
+		//		return;
+		//	}
+		//	catch (Exception)
+		//	{
+		//		return;
+		//	}
+		//}
+		//this.storeSystemVolume = false;
 	}
 
 	// Token: 0x0600287E RID: 10366 RVA: 0x00153128 File Offset: 0x00151328

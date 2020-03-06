@@ -19,7 +19,7 @@ public class LiveFeature : XBOXLive
 			XBOXLive.isTrial(true);
 			SignedInGamer.SignedIn += new EventHandler<SignedInEventArgs>(this.GamerSignedInCallback);
 			XBOXLive.gameService = new GamerServicesComponent(LiveFeature.GAME);
-			LiveFeature.GAME.Components.Add(XBOXLive.gameService);
+			// HACK(fix XNA init crash): // LiveFeature.GAME.Components.Add(XBOXLive.gameService);
 			for (int i = 0; i < 48; i++)
 			{
 				this.hiScoresTables[i] = new LiveFeature.HISCORE_ENTRY[0];

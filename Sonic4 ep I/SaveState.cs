@@ -63,11 +63,11 @@ public class SaveState
 	{
 		SaveState.saveLater = false;
 		SaveState.SaveData saveData = (SaveState.SaveData)o;
-		if (AppMain.store.FileExists("laststate.dat"))
+		if (File.Exists("laststate.dat"))
 		{
-			AppMain.store.DeleteFile("laststate.dat");
+			File.Delete("laststate.dat");
 		}
-		using (IsolatedStorageFileStream isolatedStorageFileStream = AppMain.store.CreateFile("laststate.dat"))
+		using (Stream isolatedStorageFileStream = File.Create("laststate.dat"))
 		{
 			saveData.Serialize(isolatedStorageFileStream);
 		}
@@ -83,7 +83,7 @@ public class SaveState
 		bool result;
 		try
 		{
-			result = AppMain.store.FileExists("laststate.dat");
+			result = File.Exists("laststate.dat");
 		}
 		catch (Exception)
 		{
@@ -102,9 +102,9 @@ public class SaveState
 		bool result;
 		try
 		{
-			if (AppMain.store.FileExists("laststate.dat"))
+			if (File.Exists("laststate.dat"))
 			{
-				using (IsolatedStorageFileStream isolatedStorageFileStream = new IsolatedStorageFileStream("laststate.dat", FileMode.Open, FileAccess.Read, AppMain.store))
+				using (Stream isolatedStorageFileStream = new FileStream("laststate.dat", FileMode.Open, FileAccess.Read))
 				{
 					SaveState.save.UnSerialize(isolatedStorageFileStream);
 				}
@@ -219,9 +219,9 @@ public class SaveState
 		SaveState.saveLater = false;
 		SaveState.beginResume = false;
 		SaveState.save = default(SaveState.SaveData);
-		if (AppMain.store.FileExists("laststate.dat"))
+		if (File.Exists("laststate.dat"))
 		{
-			AppMain.store.DeleteFile("laststate.dat");
+			File.Delete("laststate.dat");
 		}
 	}
 
