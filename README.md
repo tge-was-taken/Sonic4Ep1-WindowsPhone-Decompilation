@@ -11,3 +11,5 @@ It's so big that it VS to lag pretty badly and sometimes even crashes it outrigh
 The game is made for touch controls which makes it hard to play on PC, however I have hacked in mouse controls for the time being so the game logic can be tested further.
 ## XNB files are incompatible
 The XNB files that come with the game are incompatible with the Windows XNA runtime. They need to be patched for the time being, but it could be automatically.
+## GamerServices unavailable
+Some XNA gamerservices like the Guide and Xbox Live are unavailable and will cause the game to crash at boot or at runtime. A workaround has been added.
